@@ -34,8 +34,27 @@ void Train::addCage(Cage* _cage) {
   }
 }
 
+void Train::createCages(unsigned int _length) {
+  for (unsigned int i = 0; i < _length; i++) {
+    addCage(new Cage(std::rand() % 2));
+  }
+}
 
-
+unsigned int Train::countLength() {
+  Cage* curr = begin;
+  begin->on();
+  for (unsigned int step = 1; ; step++) {
+    for (unsigned int i = 0; i < step; i++) {
+      curr = curr->left;
+      curr->off();
+    }
+    for (unsigned int i = 0; i < step; i++) {
+      curr = curr->right;
+    }
+    if (!curr->isLight())
+      return step;
+  }
+}
 
 void Train::print() {
   Cage* curr = begin;
