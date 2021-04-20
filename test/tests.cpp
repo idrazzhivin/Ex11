@@ -8,3 +8,8 @@ TEST(TrainTest, test1) {
   EXPECT_EQ(false, cage->isLight());
 }
 
+TEST(TrainTest, test2) {
+  bool lamp = std::rand() % 2;
+  Cage* cage = new Cage(lamp);
+  EXPECT_EQ(lamp, cage->isLight());
+}
