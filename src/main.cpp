@@ -7,5 +7,7 @@
 #include "train.h"
 
 int main() {
+  srand(time(0));
+  Train* train1 = new Train;
   return 0;
 }
