@@ -52,4 +52,31 @@ TEST(TrainTest, test8) {
   EXPECT_EQ(2, train->countLength());
 }
 
+TEST(TrainTest, test9) {
+  Train* train = new Train;
+  unsigned int length = std::rand() % 500 + 1;
+  train->createCages(length);
+  EXPECT_EQ(length, train->countLength());
+}
+
+TEST(TrainTest, test10) {
+  Train* train = new Train;
+  unsigned int length = std::rand() % 500 + 1;
+  train->createCages(length);
+  EXPECT_EQ(length, train->countLength());
+}
+
+TEST(TrainTest, test11) {
+  Train* train = new Train;
+  unsigned int length = std::rand() % 500 + 1;
+  train->createCages(length);
+  EXPECT_EQ(length, train->countLength());
+}
+
+TEST(TrainTest, test12) {
+  Train* train = new Train;
+  unsigned int length = std::rand() % 500 + 1;
+  train->createCages(length);
+  EXPECT_EQ(length, train->countLength());
+}
 
