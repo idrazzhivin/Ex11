@@ -34,5 +34,22 @@ TEST(TrainTest, test5) {
   EXPECT_EQ(25, train->countLength());
 }
 
+TEST(TrainTest, test6) {
+  Train* train = new Train;
+  train->createCages(3);
+  EXPECT_EQ(3, train->countLength());
+}
+
+TEST(TrainTest, test7) {
+  Train* train = new Train;
+  train->createCages(1);
+  EXPECT_EQ(1, train->countLength());
+}
+
+TEST(TrainTest, test8) {
+  Train* train = new Train;
+  train->createCages(2);
+  EXPECT_EQ(2, train->countLength());
+}
 
 
