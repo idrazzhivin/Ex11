@@ -18,8 +18,14 @@ class Cage {
 };
 
 class Train {
+ private:
+    Cage* begin;
+    Cage* end;
  public:
     Train();
+    void addCage(Cage* _cage);
+    void createCages(unsigned int _length);
+    unsigned int countLength();
     void print();
 };
 
