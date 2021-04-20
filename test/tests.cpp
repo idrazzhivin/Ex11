@@ -3,5 +3,8 @@
 #include <string>
 #include "train.h"
 
-
+TEST(TrainTest, test1) {
+  Cage* cage = new Cage();
+  EXPECT_EQ(false, cage->isLight());
+}
 
