@@ -17,7 +17,7 @@ int main() {
   Train* train2 = new Train;
   train2->createCages(std::rand() % 500 + 1);  // length rnd
   std::cout << "The length of train is "
-  << train2->countLength(); // find length
-  train2->print();  
+  << train2->countLength();  // find length
+  train2->print();
   return 0;
 }
