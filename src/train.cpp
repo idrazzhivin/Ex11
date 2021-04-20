@@ -1,3 +1,4 @@
+// Copyright 2021 Ivan Razzhivin
 #include "train.h"
 
 Cage::Cage(bool _lamp)
